@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: 30px;
+    text-transform: uppercase;
+}
+h2{
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  margin: 30px;
+}
+
+p{
+    color: #fff;
+    text-shadow: 2px 2px rgb(175, 53, 37);
+}
+
+@media screen and (max-width: 600px) {
+  h3{
+      font-size: 200%;
+  }
+}
+
+.div-image{
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  color: #7c7573;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding-left: 18px;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
+.div-image img{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+  box-sizing: border-box;
+}
+
+.div-image img:hover{
+  opacity: 0.7;
+  transform: scale(1.2);
+  transform: rotateY(360deg) ;
+}
+
+#blurryHeader{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100' height='100' style='filter:url(%23f)' opacity='.2'/%3E%3C/svg%3E");
+  left: 0;
+  top: 0;
+  z-index: 1;
+  touch-action: none;
+  justify-content: center;
+  box-sizing: border-box; 
+} 
+
+#blurryHeader img{
+  width: 90px;
+}
+
+#blurryHeader button{
+  padding: 5px;
+}
+
+#blurryHeader button:hover{
+  background-color: #ffffff;
+  opacity: 0.8;
+  
+}
+
+#blurryHeader input{
+  background-color: white;
+  border-style: groove;
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  padding: 0.25em 0.5em;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+}
+
+#blurryHeader input:focus {
+  border-color: hsl(var(--input-focus-h), var(--input-focus-s), var(--input-focus-l));
+  outline: 3px solid #7a3b2e;
+}
+
+
+
+#btn{
+ justify-content: center;
+ margin: 10px;
+ 
+}
+
+#btn::before{
+  color: #ffffff;
+ }
+
+#cardName{
+  color: rgb(0, 0, 0);
+  
+}
+
+.manaFilterTxt{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  margin: 10px;
+}
+
+#pesquisa{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+body{
+  background-color: #020313;
+  font-family: 'Orbitron', sans-serif;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  box-sizing: border-box;
+  margin-top: 35px;
+  
+}
+
+@media screen and (max-width: 600px) {
+  body{
+    width: auto;
+    display: list-item;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    background-color: #020313;
+    margin-top: 100px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  
+  #content{
+    width: auto;
+    display: list-item;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.card{
+    width: 100%;
+    background-color: #7a3b2e;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    border: #7c7573 ;
+    border-style: double;
+    border-radius: 10px;
+    box-shadow: RGB(223, 207, 190) 0px 3px 8px; ;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 20px;
+}
+@media screen and (max-width: 600px) {
+  .card{
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.col-md-4{
+background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
+align-items: center;
+justify-content: center;
+color: #ffffff ;
+text-shadow: 2px 2px 2px rgb(0, 0, 0);
+border: #7c7573 ;
+border-style: double;
+border-radius: 10px;
+box-shadow: RGB(223, 207, 190) 0px 3px 8px; 
+height: 450px ;
+padding-top: 70px;
+
+}
+
+.col-md-8{
+  max-height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #7c7573 ;
+  box-sizing: border-box;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.col-md-8 *{
+  margin: 2%;
+}
+
+.card-mb-3{
+  background-color: #7a3b2e;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  border: #7c7573 ;
+  border-style: double;
+  border-radius: 10px;
+  box-shadow: RGB(223, 207, 190) 0px 3px 8px; ;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.divImagem:hover img{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+  box-sizing: border-box ;
+  
+}
+
+.divImagem:hover{
+  border: 10px solid #7c7573;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+  -webkit-transform: rotateZ(-360deg) scale(1.5) ;
+  transform: rotateZ(-360deg) scale(1.5) ;
+  opacity: 0.8;
+}
+
+#row1{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 100%;
+  min-height: 100%;
+}
+#btn {		
+	position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 1.4rem;
+	color: var(--inv);
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+#btn:before, #btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+#btn:hover {
+	color: var(--def);
+	transition-delay: .5s;
+}
+
+#btn:hover:before {
+	transition-delay: 0s;
+}
+
+#btn:hover:after {
+	background: var(--inv);
+	transition-delay: .35s;
+}
+
+/* From center */
+
+#btn:before {
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;
+  --def: #ffffff; 	
+	--inv: rgb(255, 255, 255);
+}
+
+#btn:after {
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	background: var(--inv);
+}
+#btn:hover:before {
+	left: 0;
+	width: 100%;
+}
+
+#btn:hover:after {
+	top: 0;
+	height: 100%;
+}
+
+#btn {		
+	position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 1.0rem;
+	color: white;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+#btn:before, #btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+#btn:hover {
+	color: var(--def);
+	transition-delay: .5s;
+}
+
+#btn:hover:before {
+	transition-delay: 0s;
+}
+
+#btn:hover:after {
+	background: var(--inv);
+	transition-delay: .35s;
+}
+
+.ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  background:transparent;
+  border:3px solid #3c3c3c;
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:#fff000;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px #fff000;
+  box-shadow:0 0 20px rgba(0,0,0,.5);
+  margin-top: 140px;
+}
+.ring:before
+{
+  content:'';
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3px solid #fff000;
+  border-right:3px solid #fff000;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+#spanLoading
+{
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate 2s linear infinite;
+}
+#spanLoading:before
+{
+  content:'';
+  position:absolute;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#fff000;
+  top:-6px;
+  right:-8px;
+  box-shadow:0 0 20px #fff000;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}

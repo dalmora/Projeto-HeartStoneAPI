@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3{
+    color: whitesmoke;
+    font-family: 'Orbitron', sans-serif;
+}
+
+p{
+    color: #fff;
+    text-shadow: 2px 2px rgb(175, 53, 37);
+}
+
+@media screen and (max-width: 600px) {
+  h3{
+      font-size: 200%;
+  }
+}
+
+.div-image{
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  color: #7c7573;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding-left: 18px;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
+.div-image img{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+  box-sizing: border-box;
+}
+
+.div-image img:hover{
+  opacity: 0.7;
+  transform: scale(1.2);
+  transform: rotateY(360deg) ;
+}
+
+#blurryHeader{
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 6rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100' height='100' style='filter:url(%23f)' opacity='.2'/%3E%3C/svg%3E");
+  mask: linear-gradient(black 7rem, transparent);
+  -webkit-mask: linear-gradient(black 7rem, transparent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(8px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+  touch-action: none;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+#logoHeader{
+    align-items: flex-end;
+    width: 90px;
+    
+}
+
+body{
+    background-color: #020313;
+    font-family: 'Orbitron', sans-serif;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  body{
+    width: auto;
+    display: list-item;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    background-color: #020313;
+    margin-top: 100px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  
+  #content{
+    width: auto;
+    display: list-item;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.card{
+    width: 30%;
+    margin: 20px;
+    background-color: #7a3b2e;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    border: #7c7573 ;
+    border-style: double;
+    border-radius: 10px;
+    box-shadow: RGB(223, 207, 190) 0px 3px 8px; ;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  .card{
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: sticky;
+    width: 80px;
+    height: 80px;
+    padding-top: 18%;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #993f2d; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c2472f; 
+} 
